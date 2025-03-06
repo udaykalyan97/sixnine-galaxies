@@ -35,7 +35,7 @@ export default function Game() {
     setResult(null);
 
     try {
-      const response = await axios.post("http://localhost:4500/roll-dice", {
+      const response = await axios.post("https://dice-game-backend-cxph.onrender.com/roll-dice", {
         bet,
         balance, // Send balance to backend
       });
